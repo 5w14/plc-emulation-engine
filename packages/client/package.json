@@ -1,0 +1,13 @@
+{
+  "name": "@plc-emulation/client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "module": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@plc-emulation/core": "workspace:*"
+  }
+}

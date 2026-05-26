@@ -1,0 +1,14 @@
+{
+  "name": "@plc-emulation/core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser-safe PLC runtime core and IR",
+  "type": "module",
+  "module": "index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

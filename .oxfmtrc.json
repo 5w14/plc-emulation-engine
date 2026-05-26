@@ -1,0 +1,12 @@
+{
+  "ignorePatterns": [
+    "node_modules/**",
+    "dist/**",
+    "out/**",
+    "coverage/**",
+    "logs/**",
+    "*.tgz",
+    "*.lcov",
+    "*.tsbuildinfo"
+  ]
+}

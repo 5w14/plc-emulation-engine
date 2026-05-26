@@ -1,0 +1,27 @@
+{
+  "name": "plc-emulation-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PLC emulation engine workspace",
+  "workspaces": [
+    "packages/core",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "bun test",
+    "perf:test": "bun test tests/performance.test.ts",
+    "typecheck": "tsc --noEmit",
+    "fmt": "oxfmt --write .",
+    "fmt:check": "oxfmt --check .",
+    "check": "bun run fmt:check && bun test && tsc --noEmit"
+  },
+  "devDependencies": {
+    "@plc-emulation/core": "workspace:*",
+    "@types/bun": "^1.3.13",
+    "oxfmt": "^0.48.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
